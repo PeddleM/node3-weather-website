@@ -12,8 +12,8 @@ const forecast = (latitude, longitude, callback) => {
         } else {
 
             const summary = body.current.weather_descriptions[0] + '. It is currently ' + body.current.temperature + 
-                ' degrees out, feels like ' + body.current.feelslike + ' degrees with a wind speed of ' + body.current.wind_speed
-                 + ' m/s.'
+                ' degrees out, feels like ' + body.current.feelslike + ' degrees with a wind speed of ' 
+                + body.current.wind_speed + ' m/s.'
 
             callback(undefined, summary)
         }  
